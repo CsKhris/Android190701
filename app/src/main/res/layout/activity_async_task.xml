@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AsyncTaskActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/asyncdisplay"
+        android:text="Thread Status"
+        android:textSize="37dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max = "100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time"
+            android:textSize="19dp"
+            android:id="@+id/start"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop"
+            android:textSize="19dp"
+            android:id="@+id/end"/>
+
+    </LinearLayout>
+
+</LinearLayout>
